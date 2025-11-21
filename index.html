@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Adoption</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="logo">
+        🐾 Pet Haven
+      </div>
+      <nav class="menu">
+        <a href="#pets">Pets</a>
+        <a href="#specials">Specials</a>
+        <a href="#about">About</a>
+        <a href="#adopt" class="btn-outline">Adopt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Find Your Furry Friend!</h1>
+          <p>Adopt a cat, dog, or bird and give them a loving home.</p>
+          <a href="#pets" class="btn">View Pets</a>
+        </div>
+        <div class="hero-img">
+          <img src="pet.jpg" alt="Happy Cat">
+        </div>
+      </div>
+    </section>
+
+    <!-- PET CARDS -->
+    <section id="pets" class="section">
+      <div class="container">
+        <h2 class="section-title">Available Pets</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="cat.jpg" alt="Cat">
+            <div class="card-body">
+              <h3>Fluffy Cat</h3>
+              <p>Age: 2 yrs | Friendly & playful</p>
+              <a href="#adopt" class="btn-small">Adopt</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="dogg.jpg" alt="Dog">
+            <div class="card-body">
+              <h3>Buddy Dog</h3>
+              <p>Age: 3 yrs | Loyal & energetic</p>
+              <a href="#adopt" class="btn-small">Adopt</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="birdy.jpg" alt="Bird">
+            <div class="card-body">
+              <h3>Sunny Bird</h3>
+              <p>Age: 1 yr | Chirpy & social</p>
+              <a href="#adopt" class="btn-small">Adopt</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section alt">
+      <div class="container about-inner">
+        <div class="about-text">
+          <h2>About Pet Haven</h2>
+          <p>We are dedicated to finding loving homes for pets. All our pets are vaccinated, healthy, and looking for a family to care for them.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADOPTION FORM -->
+    <section id="adopt" class="section">
+      <div class="container">
+        <h2 class="section-title">Adoption Form</h2>
+        <form class="order-form" action="mailto:youremail@example.com" method="post" enctype="text/plain">
+          <label>Full Name</label>
+          <input type="text" name="Name" required>
+
+          <label>Phone</label>
+          <input type="tel" name="Phone" required>
+
+          <label>Pet Choice</label>
+          <select name="Pet">
+            <option>Fluffy Cat</option>
+            <option>Buddy Dog</option>
+            <option>Sunny Bird</option>
+          </select>
+
+          <label>Address</label>
+          <textarea name="Address" rows="3" required></textarea>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Pet Haven • Made with ❤️ • Demo project</p>
+    </div>
+  </footer>
+</body>
+</html>
